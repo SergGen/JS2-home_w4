@@ -1,1 +1,30 @@
-<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <form class="header__search_form" action="#">
+            <label><input type="text" class="header__search" placeholder="Введите наименование товара для поиска"></label>
+            <button id="header__search_button"><i class="fas fa-search"></i></button>
+        </form>
+        <button class = "cart-button" id="cartBtn" type="button">Корзина</button>
+    </header>
+    <main class="main">
+        <div class = "goods-list" ></div>
+    </main>
+    <div id="basketId" class="basket invisible">
+        <h2 class="basket__header">Корзина</h2>
+        <button id="closeBasket" class="closeBasket" type="button"><i class="fas fa-times"></i></button>
+        <div class="basket__goods"></div>
+        <p class="totalCost">Общая стоимость товаров: <span class="basket__totalCost_value">0</span> &#8381</p>
+        <button class="basket__confirm_order">Оформить покупку</button>
+    </div>
+    <script defer src="js/script.js"></script>
+</body>
+</html>
